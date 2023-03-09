@@ -36,11 +36,11 @@ public class BJ_1926 {
             // 큐에서 꺼낼때 ++
             cnt++;
             for (int i = 0; i < 4; i++) {
-                int ny = p.x + dist_x[i];
-                int nx = p.y + dist_y[i];
+                int nx = p.x + dist_x[i];
+                int ny = p.y + dist_y[i];
                 // 상하좌우 탐색 조건
                 // 1. index 범위 초과하는지 확인
-                if (ny < 0 || nx < 0 || ny >= n || nx >= m) continue;
+                if (ny < 0 || nx < 0 || ny >= m || nx >= n) continue;
                 // 2. 이미 방문한 노드인지 확인
                 if (visit[nx][ny] == 1) continue;
                 // 3. 0인 노드 방문 X
