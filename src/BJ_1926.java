@@ -13,9 +13,12 @@ public class BJ_1926 {
     static int n;
     static int m;
     static int answer = 0;
-    static class Point{
-        int x; int y;
-        public Point(int x, int y){
+
+    static class Point {
+        int x;
+        int y;
+
+        public Point(int x, int y) {
             this.x = x;
             this.y = y;
         }
@@ -77,7 +80,7 @@ public class BJ_1926 {
         int pic = 0;
 
         //0,0에서부터 탐색
-        for (int x= 0; x < n; x++) {
+        for (int x = 0; x < n; x++) {
             for (int y = 0; y < m; y++) {
                 // 현재 1이면 bfs 탐색
                 if (array[x][y] == 1) {
