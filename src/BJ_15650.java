@@ -1,7 +1,7 @@
+//N과 M (2)
 import java.io.*;
 import java.util.*;
 
-//N과 M (2)
 // 무순서 start = i : 중복허용
 // 무순서 start = i+1 : 중복불가
 // 순서 visit[]X : 중복허용
