@@ -8,8 +8,10 @@ public class BJ_11399 {
     static int n;
 
     static int findMin() {
+        // 배열을 오름차순으로 정렬
         Arrays.sort(line);
         int result = 0;
+        //1번에서 n번까지 배열값 더하기
         for (int i = 0; i < n; i++) {
             for (int j = 0; j <= i; j++) {
                 result += line[j];

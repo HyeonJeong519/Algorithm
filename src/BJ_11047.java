@@ -12,7 +12,9 @@ public class BJ_11047 {
         int cnt = 0;
         int remain = k;
         for (int i = n - 1; i >= 0; i--) {
+            //큰 동전부터 나눠서 동전 개수 더하기
             cnt = cnt + remain / coin[i];
+            //나머지 값 갱신
             remain = remain % coin[i];
         }
         return cnt;
