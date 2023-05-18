@@ -40,6 +40,10 @@ public class BJ_11650 {
             System.out.println(arr[i].y+" "+arr[i].x);
         }
 
+        for(Point p : arr){
+            System.out.println(p.y + " " + p.x);
+        }
+
     }
 
 }
